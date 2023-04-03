@@ -22,7 +22,7 @@ describe('Tab1Page', () => {
     expect(component).toBeTruthy();
   });
 
-  it("Page title should be 'Welcome!'", () => {
+  it("Page title should be 'Welcome User!'", () => {
     const debugElement : DebugElement = fixture.debugElement;
     const document : HTMLElement = debugElement.nativeElement;
     const titleElems = document.querySelectorAll("ion-title");
@@ -30,7 +30,7 @@ describe('Tab1Page', () => {
     for (let i = 0; i < titleElems.length; i++){
       expect(titleElems[i]).toBeTruthy();
       expect(titleElems[i]?.innerHTML).
-      withContext(`ion-title in position ${i} is ${titleElems[i].innerHTML} which isn't equal to 'Welcome!'`).toEqual("Welcome!");
+      withContext(`ion-title in position ${i} is ${titleElems[i].innerHTML} which isn't equal to 'Welcome User!'`).toEqual("Welcome User!");
     }
 
   });
