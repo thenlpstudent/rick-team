@@ -1,0 +1,13 @@
+<swiper-container [modules]="swiperModules" pagination="true">
+  <ng-container *ngFor="let i of [1, 2, 3, 4, 5, 6]">
+    <swiper-slide class="swip">
+      <ion-card id="widget">
+        <img alt="{{getAltText()}}" src="{{getTeamLeaderImage(i)}}" style="width:100%" />
+        <ion-card-header>
+          <ion-card-title>{{getTeamTitle()}}</ion-card-title>
+          <ion-card-subtitle>Your Team</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </swiper-slide>
+  </ng-container>
+</swiper-container>

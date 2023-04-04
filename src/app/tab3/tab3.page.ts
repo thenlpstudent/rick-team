@@ -12,6 +12,7 @@ import { Character } from '../entity/character';
   imports: [IonicModule, CommonModule],
 })
 export class Tab3Page implements OnInit{
+  static characters: Character[];
   constructor(private characterService: CharacterService) {}
   characters:Character[] = [];
   currentPage = 1;
@@ -21,7 +22,7 @@ export class Tab3Page implements OnInit{
     this.generateItems(null);
   }
 
-  private generateItems(ev:any) {
+  public generateItems(ev:any) {
     if (this.isFetching)
       return;
 

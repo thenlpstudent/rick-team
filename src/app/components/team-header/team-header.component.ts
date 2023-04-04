@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class TeamHeaderComponent  implements OnInit {
 
 
-  private widgetHidden : boolean = true;
+  private widgetHidden : boolean = false;
   private teamLeaderName : string = "Rick Sanchez";
   private teamLeaderImage : string = "https://rickandmortyapi.com/api/character/avatar/2.jpeg";
   private teamTitle: string = "TEAM A";
+
 
   constructor() { }
 
